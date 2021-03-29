@@ -1,0 +1,222 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-color: #F8F4E1;
+  color: #4e3620;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 62.5%;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+}
+
+header {
+  background-color: #897853;
+}
+
+h3 {
+    color: #F8F4E1;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: .5rem;
+}
+
+.app-container {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-weight: lighter;
+  padding: 1rem;
+  height: 90vh;
+  border: thin dashed #897853;
+}
+
+.users {
+  border-radius: 3px;
+  flex: 0 0 40%;
+}
+
+.users::-webkit-scrollbar {
+  background-color: #897853;
+  width: 0.2rem;
+  border-radius: 5px;
+}
+
+.user {
+  border: #897853 medium solid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+.user-name {
+  text-align: center;
+}
+
+/* ==================================== */
+
+.details-pane {
+  height: 100%;
+  padding: 0.5rem;
+  flex: 0 0 60%;
+}
+
+@media screen and (max-width: 368px){
+  .details-pane{
+    flex: 0 0 40%;
+  }
+  
+}
+
+/* ==================================== */
+
+.user-image {
+  height:300px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 570px){
+  .user-image{
+    height:200px;
+    width: 200px;
+  }
+  
+}
+
+@media screen and (max-width: 368px){
+  .user-image{
+    height:150px;
+    width: 300px;
+  }
+  
+}
+
+@media screen and (max-width: 570px){
+  .user-image{
+    height:120px;
+    width: 300px;
+  }
+  
+}
+
+
+.star-wars-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ==================================== */
+
+.details {
+  margin: 0.1rem auto;
+  width: 100%;
+  border-color: #897853;
+  border-radius: 5px;
+  padding: 0.2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media screen and (max-width: 372px){
+  .details{
+    font-size: 13px;
+  }  
+}
+
+/* ===================================== */
+
+.caracter-container {
+  display: flex;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1236px){
+  .caracter-container{
+    overflow-y: scroll;
+    height: 400px;
+  }  
+}
+
+.character {
+  cursor: pointer;
+}
+
+.character-img-box {
+  height: 120px;
+  width: 120px;
+  padding-top: 20px;  
+}
+
+.charcter-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.character-name {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* ===================================== */
+
+@media screen and (max-width: 350px){
+  .stars-title{
+    font-size: 14px;
+  }
+  
+}
+
+/* ==================================== */
+
+@media screen and (max-width: 380px) {
+  .app-container {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: .1rem;
+    
+  }
+
+  .user-image {
+    margin-bottom: 0;
+  }
+
+  .user-details {
+    padding-bottom: 0;
+  }
+
+  .user {
+    margin-top: 0;
+  }
+
+  .user-name {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
