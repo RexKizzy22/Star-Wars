@@ -11,7 +11,6 @@
         const data = await fetch("https://swapi.dev/api/people/")
 
         characters = await data.json();
-
         // DOM
         characters.results.forEach((el, i) => {
             container.insertAdjacentHTML('beforeend', 
